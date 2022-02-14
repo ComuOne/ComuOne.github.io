@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+::selection {
+    background-color: rgb(210, 150, 0)
+}
+
+body {
+    background-color: #303030;
+}
+
+#app {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/*  */
+
+#app .modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modalInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modalInfo header {
+    text-align: right;
+    width: 95vh;
+}
+
+#modalInfo header button {
+    padding: 5px;
+    width: 17vh;
+    background-color: rgb(207, 0, 0);
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#modalInfo header button:hover {
+    background-color: rgb(230, 0, 0);
+}
+
+#modalInfo header button i {
+    font-size: 2.2rem;
+}
+
+.contenerModal {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(207, 0, 0);
+}
+
+.contenerScrollBarModal {
+    height: 75vh;
+    width: 85vh;
+    overflow-y: scroll;
+}
+
+.contenerScrollBarModal::-webkit-scrollbar {
+    height: auto;
+    width: 10px;
+}
+
+.contenerScrollBarModal::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 160, 0);
+    border-radius: 50px;
+}
+
+.contenerScrollBarModal::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 180, 0);
+}
+
+.titleInfo {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.listeNouveaute li {
+    font-size: 1.2rem;
+}
+
+.listeNouveaute li span {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.listeNouveaute li span:hover {
+    color: rgb(50, 50, 50);
+}
+
+.paragrapheClassique {
+    font-size: 1.1rem;
+}
+
+.titleInfoSecondary {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/*  */
+
+.contener {
+    text-align: center;
+    background-color: rgb(207, 0, 0);
+    padding: 3%;
+    border-radius: 15px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contener:hover {
+    background-color: rgb(230, 0, 0);
+}
+
+.contener h1 {
+    font-size: 3.5rem;
+    color: #303030;
+}
+
+.letterTitle {
+    visibility: hidden;
+}
+
+@media (max-width: 870px) {
+    .contener h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 765px) {
+    .contener h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenerScrollBarModal {
+        width: 70vh;
+    }
+
+    #modalInfo header {
+        width: 85vh;
+    }
+}
+
+@media (max-width: 725px) {
+    .contenerScrollBarModal {
+        width: 60vh;
+    }
+}
+
+@media (max-width: 665px) {
+    .contener {
+        margin-left: 7vh;
+        margin-right: 7vh;
+    }
+
+    .contener h1 {
+        font-size: 2rem;
+    }
+
+    #modalInfo header {
+        width: 65vh;
+    }
+
+    .contenerScrollBarModal {
+        width: 55vh;
+    }
+}
+
+@media (max-width: 515px) {
+    .contener {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    
+    .contenerScrollBarModal {
+        width: 50vh;
+    }
+
+    #modalInfo header {
+        width: 60vh;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .contener h1 {
+        font-size: 1.7rem;
+    }
+
+    #modalInfo header {
+        width: 55vh;
+    }
+
+    .contenerScrollBarModal {
+        width: 45vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .contener h1 {
+        font-size: 1.5rem;
+    }
+
+    #modalInfo header {
+        width: 40vh;
+    }
+
+    .contenerScrollBarModal {
+        width: 35vh;
+    }
+}
+
+@media (max-width: 385px) {
+    .contener {
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+    }
+
+    
+    #modalInfo header {
+        width: 40vh;
+    }
+
+    .contenerScrollBarModal {
+        width: 32vh;
+    }
+}
+
+@media (max-width: 320px) {
+    #modalInfo header {
+        width: 35vh;
+    }
+
+    .contenerScrollBarModal {
+        width: 27vh;
+    }
+
+    .titleInfo {
+        font-size: 2rem
+    }
+}

@@ -18,7 +18,6 @@ tabLetterTitle.forEach(el => {
 contener.addEventListener("click", () => {
     modalInfo.classList.add("modal-active");
 });
-modalInfo.classList.add("modal-active");
 
 fermeModalInfo.addEventListener("click", () => {
     modalInfo.classList.remove("modal-active");
